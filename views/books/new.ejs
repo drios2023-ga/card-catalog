@@ -1,0 +1,55 @@
+<%- include('../partials/header') %>
+
+    <form action="/books" method="post">
+        <table>
+            <tr>
+                <td>
+                    title
+                </td>
+                <td>
+                    <input type="text" name="title">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    author
+                </td>
+                <td>
+                    <input type="text" name="author">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    year
+                </td>
+                <td>
+                    <input type="text" name="year">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    description
+                </td>
+                <td>
+                    <input type="text" name="description">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    publisher
+                </td>
+                <td>
+                    <input type="text" name="publisher">
+                </td>
+            </tr>
+
+        </table>       
+
+        <button type="submit">Save Book</button>
+    </form>
+
+<%- include('../partials/footer') %>

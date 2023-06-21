@@ -1,0 +1,52 @@
+<%- include('../partials/header.ejs') %>
+
+
+    <table>
+        <tr>
+            <td>
+                Title: 
+            </td>            
+            <td>
+                <%= book.title %>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Author: 
+            </td>
+            <td>
+                <%= book.author %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Year: 
+            </td>
+            <td>
+                <%= book.year %>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Description: 
+            </td>
+            <td>
+                <%= book.description %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Publisher: 
+            </td>
+            <td>
+                <%= book.publisher %>
+            </td>
+        </tr>
+
+    </table>  
+
+
+    <a href="/books/<%= book.id %>/edit">Edit Book</a>
+<%- include('../partials/footer.ejs') %>    

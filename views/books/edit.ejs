@@ -1,0 +1,55 @@
+<%- include('../partials/header') %>
+
+    <form action="/books/<%= book.id %>?_method=PUT" method="post">
+        
+        <table>
+            <tr>
+                <td>
+                    Title: 
+                </td>            
+                <td>
+                    <input type="text" name="title" value="<%= book.title %>">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    Author: 
+                </td>
+                <td>
+                    <input type="text" name="author" value="<%= book.author %>">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Year: 
+                </td>
+                <td>
+                    <input type="text" name="year" value="<%= book.year %>">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    Description: 
+                </td>
+                <td>
+                    <input type="text" name="description" value="<%= book.description %>">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Publisher: 
+                </td>
+                <td>
+                    <input type="text" name="publisher" value="<%= book.publisher %>">
+                </td>
+            </tr>
+    
+        </table>  
+
+
+        <button type="submit">Update Book</button>
+    </form>
+
+<%- include('../partials/footer') %>
